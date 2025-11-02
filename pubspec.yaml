@@ -1,0 +1,45 @@
+name: SangKala
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.5
+  http: ^0.13.6
+  shared_preferences: ^2.5.0
+  json_annotation: ^4.9.0
+  google_fonts: ^4.0.4
+  image_picker: ^1.2.0
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  json_serializable: ^6.8.0
+  build_runner: ^2.8.0
+  flutter_native_splash: ^2.4.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+flutter_native_splash:
+  color: "#fef4de"          # Warna background
+  image: assets/logo.png    # Logo aplikasi (pastikan sudah ada di assets)
+  # branding: "Cool App" # (opsional) teks/judul di bawah logo
+  android: true
+  ios: true
+  web: true
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
